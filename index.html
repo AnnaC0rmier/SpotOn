@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SpotOn</title>
+    <link rel="stylesheet" href="./Assets/style.css">
 </head>
 <body>
+    <header>
+        <h1>SpotOn</h1>
+    </header>
+
+    <div class="navbar">
+        <div class="hamburger-icon" onclick="toggleNavbar()">☰</div>
+        <div class="hamburger-links">
+            <a href="#history" onclick="toggleNavbar()">History</a>
+            <a href="#developers" onclick="toggleNavbar()">Meet the Developers</a>
     
+   
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
