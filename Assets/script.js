@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 // const apiKey = '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b'
 
 // const musicUrl = 'https://spotify23.p.rapidapi.com/recommendations/'
@@ -36,7 +33,6 @@ getMusicData()
 
 
   
-=======
 const input = document.getElementById("dropdown");
 const Genre = document.getElementById("Genre");
 const formData = document.getElementById("Form");
@@ -79,4 +75,3 @@ function generateOptions(userInput) {
   return options;
 }
 generateOptions("Music")
->>>>>>> b0b05f78038ced7606fa6ed7ace19aaf975e83a3
