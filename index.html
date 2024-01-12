@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotOn</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
 <body>
 <header>
-SpotOn
+<h1 class="title is-1">SpotOn</h1>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+   
+       
+    <a class="navbar-item" href="history.html">Search History</a>
+    <a class="navbar-item" href="dev.html">Meet the Team</a>
+    
+    </div>
+</nav>
 </header>
-<div> 
-    <p>
-    Your SpotOn 5
-    </p>
-    <ul>
-        replace this with song
-        replace this with song
-        replace this with song
-        replace this with song
-        replace this with song
-    </ul>
-</div>  
-<div>
+<div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
+<div class="column is-one-quarter has-text-centered">
     <p>
     Answer some questions and we will generate SpotOn results
     </p>
@@ -48,6 +52,19 @@ SpotOn
   
   <button type="submit" value="Submit"  text=>Submit or Else</button>
     </form>
+</div>
+<div class="column is-one-quarter has-text-centered"> 
+    <p>
+    Your SpotOn 5
+    </p>
+    <ul>
+        replace this with song
+        replace this with song
+        replace this with song
+        replace this with song
+        replace this with song
+    </ul>
+</div>  
 </div>
 <script src="./Assets/script.js"></script>
 </body>
