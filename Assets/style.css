@@ -57,13 +57,19 @@ header {
         background-color: #444;
         margin-top: 5px;
     }
-
-    .navbar.show a {
-        display: block;
+    .title {color: white;
     }
+    
+    header {background: #333;}
 
-    .hamburger-links {
-        display: flex;
+    .navbar {background: gray;}
+    
+    .navbar-item {color: white}
+    
+    .column {
+        color: black;
+        border:1px solid black;
+        min-width:15%;
+        background: linear-gradient(to right, #a6a6a6, #4c4c4c);
+        }
     }
-}
-
