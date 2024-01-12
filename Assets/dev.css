@@ -1,6 +1,17 @@
+body{
+background: linear-gradient(to right, #00bf63, #006046);
+min-height: 100vh;
+}
+.title {color: black;}
 
-  .column {
-    background-color:white;
+.navbar {background: transparent;
+}
+ 
+.navbar-item {color: black}
+
+.column {
+    color: black;
     border:1px solid black;
     min-width:15%;
+    background: linear-gradient(to right, #a6a6a6, #4c4c4c);
     }

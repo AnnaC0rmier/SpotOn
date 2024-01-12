@@ -1,69 +1,17 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
-header {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-}
-
-.navbar {
-    background-color: #555;
-    text-align: center;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px;
-    margin: 0 5px;
-}
-
-.hamburger-icon {
-    cursor: pointer;
-    font-size: 30px;
-    z-index: 2;
-}
-
-.hamburger-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background-color: #555;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-}
-
-.hamburger-links a {
-    padding: 10px;
-    margin: 0 5px;
-    display: block;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar a {
-        display: none;
-        width: 100%;
-        background-color: #444;
-        margin-top: 5px;
+body{
+    background: linear-gradient(to right, #00bf63, #006046);
+    min-height: 100vh;
     }
-
-    .navbar.show a {
-        display: block;
+    .title {color: black;}
+    
+    .navbar {background: transparent;
     }
-
-    .hamburger-links {
-        display: flex;
-    }
-}
-
+     
+    .navbar-item {color: black}
+    
+    .column {
+        color: black;
+        border:1px solid black;
+        min-width:15%;
+        background: linear-gradient(to right, #a6a6a6, #4c4c4c);
+        }
