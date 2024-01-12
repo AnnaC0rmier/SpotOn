@@ -9,9 +9,10 @@
         background: linear-gradient(to right, #00bf63, #006046);
         min-height: 100vh;
         }
-        .title {color: black;}
+        .title {color: white;}
         
-        .navbar {background: transparent;
-       }
-         
-        .navbar-item {color: black}
+        header {background: #333;}
+
+    .navbar {background: gray;}
+    
+    .navbar-item {color: white;}
