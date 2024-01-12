@@ -1,11 +1,8 @@
-
-
 // const apiKey = '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b'
 
 // const musicUrl = 'https://spotify23.p.rapidapi.com/recommendations/'
 
 function getMusicData() {
-    // const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=20&seed_tracks=0c6xIDDpzE81m2q797ordA&seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_genres=classical%2Ccountry';
     const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=20&seed_genres=pop';
     const options = {
 	method: 'GET',
@@ -14,23 +11,49 @@ function getMusicData() {
 		'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
 	}
 };
-    fetch(url, options)
-    .then (function(response){
-        return response.json();  
-    })
-    .then (function(data){
-        console.log(data);
-        console.log(data.tracks);
-        console.log(data.tracks[1].artists[0]?.name);
-        console.log(data.tracks[1].name);
-        console.log(data.seeds);
-    })  
+ 
+fetch(url, options)
+.then (function(response){
+    return response.json();  
+})
+.then (function(data){
+    console.log(data.tracks[1].artists[0]?.name);
+    console.log(data.tracks[1].name);
+
+    document.getElementById('song1').textContent = data.tracks[0].artists[0]?.name + data.tracks[0].name
+    document.getElementById('song2').textContent = data.tracks[1].artists[0]?.name + data.tracks[1].name
+    document.getElementById('song3').textContent = data.tracks[2].artists[0]?.name + data.tracks[2].name
+    document.getElementById('song4').textContent = data.tracks[3].artists[0]?.name + data.tracks[3].name
+    document.getElementById('song5').textContent = data.tracks[4].artists[0]?.name + data.tracks[4].name
+  
+})  
 }
 
 getMusicData()
 
-// data.tracks[i].artist[0].name
-// conditional chaining to prevent error for multiple artists
+function getVideoData(){
+  const videoUrl = 'https://youtube-music-api3.p.rapidapi.com/search?q=saturday 21 pilots&type=song';
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b',
+    'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
+    }
+  };
+  fetch (videoUrl, options)
+  .then (function(response){
+    return response.json();
+  })
+  .then (function(data){
+    console.log(data.result[0].videoId)
+  })
+}
+getVideoData()
+
+
+
+
+// Tanner
 
 
 
