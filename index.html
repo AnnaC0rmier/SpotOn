@@ -1,39 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotOn</title>
-   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
-
-<body>
-
-
-    <script src='./Assets/script.js'></script>
-    <header>
-        <h1 class="title is-1 has-text-centered">SpotOn</h1>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-
-
-                <a class="navbar-item" href="history.html">Search History</a>
-                <a class="navbar-item" href="dev.html">Meet the Team</a>
-
-            </div>
-
- <script src = './Assets/script.js'></script>  
 <header>
     <a class="navbar-item title is-1 has-text-centered" href="index.html"> SpotOn</a>
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -43,37 +19,19 @@
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
-   
+      <a class="navbar-item" href="index.html">Home</a>
     <a class="navbar-item" href="history.html">Search History</a>
     <a class="navbar-item" href="dev.html">Meet the Team</a>
-    
     </div>
-SpotOn
 </header>
-<div> 
-    <p>
-    SpotOn
-    </p>
-</div>
-
 </nav>
-<<<<<<< HEAD
-=======
-
-
-        </nav>
->>>>>>> 1f321f969bcf5566b6bffe0063c2ee93f5283fd2
-
-</header>
 <body>
 <div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
 <div class="column is-one-quarter has-text-centered">
-
     <p>
     Answer some questions and we will generate SpotOn results
     </p>
     <form id="Form">
-
         <label for="Genre">Genre:</label>
   <select id="Genre" name="Genre">
     <option value="Hip-Hop">Hip-Hop</option>
@@ -83,11 +41,10 @@ SpotOn
     <option value="Instrumentals">Instrumentals</option>
     <option value="Pop">Pop</option>
   </select>
-  
   <button type="submit" value="Submit"  text=>Submit</button>
     </form>
 </div>
-<div class="column is-one-quarter has-text-centered"> 
+<div class="column is-one-quarter has-text-centered">
     <h3>
     Your SpotOn 5
     </h3>
@@ -96,17 +53,11 @@ SpotOn
     <p id = 'song3'></p>
     <p id = 'song4'></p>
     <p id = 'song5'></p>
-    
-
-</div>  
+</div>
+</div>
+<div id="video">
+    <h2>Check out your top SpotOn pick</h2>
 </div>
 <script src="./Assets/script.js"></script>
-<script>
-    function toggleNavbar() {
-        var navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('show');
-    }
-</script>
 </body>
-
 </html>
