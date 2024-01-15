@@ -14,5 +14,31 @@ header {background: #333;}
     color: black;
     border:1px solid black;
     min-width:15%;
-    background: linear-gradient(to right, #a6a6a6, #4c4c4c);
+
+    border-radius: 50px;
+    text-decoration: solid;
+    background: linear-gradient(to right, lightgray, #333);
+    
+    
     }
+  
+
+img {
+ width: 110px;
+ border-radius: 20px;
+ 
+}
+   
+p {
+    color: white;
+    font-size: 16px;
+    display: block
+    
+}
+
+a {
+    color: blue;
+  
+    
+}
+
