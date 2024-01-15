@@ -4,7 +4,10 @@ body{
     }
     .title {color: white;
     }
-    
+    p {
+    gap: 10px;
+    text-align: left;    
+    }
     header {background: #333;}
 
     .navbar {background: gray;}
