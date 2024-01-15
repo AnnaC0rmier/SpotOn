@@ -14,11 +14,29 @@ header {background: #333;}
     color: black;
     border:1px solid black;
     min-width:15%;
+    border-radius: 50px;
+    text-decoration: solid;
+    
+    
     }
-
+  
 
 img {
- width: 100px;
+ width: 110px;
+ border-radius: 20px;
  
 }
    
+p {
+    color: white;
+    font-size: 16px;
+    display: block
+    
+}
+
+a {
+    color: brown;
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
