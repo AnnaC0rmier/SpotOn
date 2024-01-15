@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,66 +12,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
+
 <body>
 
- <script src = './Assets/script.js'></script>  
-<header>
-<h1 class="title is-1 has-text-centered">SpotOn</h1>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-   
-       
-    <a class="navbar-item" href="history.html">Search History</a>
-    <a class="navbar-item" href="dev.html">Meet the Team</a>
-    
+    <script src='./Assets/script.js'></script>
+    <header>
+        <h1 class="title is-1 has-text-centered">SpotOn</h1>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+
+
+                <a class="navbar-item" href="history.html">Search History</a>
+                <a class="navbar-item" href="dev.html">Meet the Team</a>
+
+            </div>
+
+
+
+        </nav>
+
+    </header>
+    <div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
+        <div class="column is-one-quarter has-text-centered">
+
+            <p>
+                Answer some questions and we will generate SpotOn results
+            </p>
+            <form id="Form">
+
+                <label for="Genre">Genre:</label>
+                <select id="Genre" name="Genre">
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Instrumentals">Instrumentals</option>
+                    <option value="Pop">Pop</option>
+                </select>
+
+                <button type="submit" value="Submit" text=>Submit</button>
+            </form>
+        </div>
+        <div class="column is-one-quarter has-text-centered">
+            <h3>
+                Your SpotOn 5
+            </h3>
+            <p id='song1'></p>
+            <p id='song2'></p>
+            <p id='song3'></p>
+            <p id='song4'></p>
+            <p id='song5'></p>
+        </div>
+    </div>
+    <div id="video">
+        <h2>Check out your top SpotOn pick</h2>
     </div>
 
-
-
-</nav>
-
-</header>
-<div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
-<div class="column is-one-quarter has-text-centered">
-
-    <p>
-    Answer some questions and we will generate SpotOn results
-    </p>
-    <form id="Form">
-
-        <label for="Genre">Genre:</label>
-  <select id="Genre" name="Genre">
-    <option value="Hip-Hop">Hip-Hop</option>
-    <option value="Rock">Rock</option>
-    <option value="EDM">EDM</option>
-    <option value="Metal">Metal</option>
-    <option value="Instrumentals">Instrumentals</option>
-    <option value="Pop">Pop</option>
-  </select>
-  
-  <button type="submit" value="Submit"  text=>Submit</button>
-    </form>
-</div>
-<div class="column is-one-quarter has-text-centered"> 
-    <h3>
-    Your SpotOn 5
-    </h3>
-    <p id = 'song1'></p>
-    <p id = 'song2'></p>
-    <p id = 'song3'></p>
-    <p id = 'song4'></p>
-    <p id = 'song5'></p>
-    
-
-</div>  
-</div>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eY43Sy1wTc0" frameborder="0" allowfullscreen></iframe>
-
-<script src="./Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
+
 </html>
