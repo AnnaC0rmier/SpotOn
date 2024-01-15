@@ -1,6 +1,29 @@
-// const apiKey = '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b'
 
-// const musicUrl = 'https://spotify23.p.rapidapi.com/recommendations/'
+function getVideoData(song1){
+  const videoUrl = `https://youtube-music-api3.p.rapidapi.com/search?q=${song1}`;
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b',
+    'X-RapidAPI-Host': 'youtube-music-api3.p.rapidapi.com'
+    }
+  };
+  fetch (videoUrl, options)
+  .then (function(response){
+    return response.json();
+  })
+  .then (function(data){
+    var videoDiv = document.getElementById('video');
+    var video = document.createElement('iframe');
+    video.src =`https://www.youtube.com/embed/${data.result[0].videoId}`
+    video.width = 600;
+    video.height = 400;
+    video.allowFullscreen = true;
+    videoDiv.appendChild(video)
+  })
+}
+
+
 
 function getMusicData() {
   const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=20&seed_genres=pop';
@@ -28,7 +51,6 @@ fetch(url, options)
 
 })  
 }
-
 getMusicData()
 
 function getVideoData(){
@@ -100,3 +122,4 @@ else if (userInput === 'Music') {
 return options;
 }
 generateOptions("Music")
+
