@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotOn</title>
-   
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
 
     <script src='./Assets/script.js'></script>
     <header>
@@ -32,78 +31,46 @@
                 <a class="navbar-item" href="dev.html">Meet the Team</a>
 
             </div>
-
- <script src = './Assets/script.js'></script>  
-<header>
-    <a class="navbar-item title is-1 has-text-centered" href="index.html"> SpotOn</a>
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-   
-    <a class="navbar-item" href="history.html">Search History</a>
-    <a class="navbar-item" href="dev.html">Meet the Team</a>
-    
-    </div>
-SpotOn
-</header>
-<div> 
-    <p>
-    SpotOn
-    </p>
-</div>
-
-</nav>
-
-
         </nav>
 
-</header>
-<body>
-<div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
-<div class="column is-one-quarter has-text-centered">
+    </header>
+    <div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
+        <div class="column is-one-quarter has-text-centered">
 
-    <p>
-    Answer some questions and we will generate SpotOn results
-    </p>
-    <form id="Form">
+            <p>
+                Answer some questions and we will generate SpotOn results
+            </p>
+            <form id="Form">
 
-        <label for="Genre">Genre:</label>
-  <select id="Genre" name="Genre">
-    <option value="Hip-Hop">Hip-Hop</option>
-    <option value="Rock">Rock</option>
-    <option value="EDM">EDM</option>
-    <option value="Metal">Metal</option>
-    <option value="Instrumentals">Instrumentals</option>
-    <option value="Pop">Pop</option>
-  </select>
-  
-  <button type="submit" value="Submit"  text=>Submit</button>
-    </form>
-</div>
-<div class="column is-one-quarter has-text-centered"> 
-    <h3>
-    Your SpotOn 5
-    </h3>
-    <p id = 'song1'></p>
-    <p id = 'song2'></p>
-    <p id = 'song3'></p>
-    <p id = 'song4'></p>
-    <p id = 'song5'></p>
-    
+                <label for="Genre">Genre:</label>
+                <select id="Genre" name="Genre">
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="EDM">EDM</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Instrumentals">Instrumentals</option>
+                    <option value="Pop">Pop</option>
+                </select>
 
-</div>  
-</div>
-<script src="./Assets/script.js"></script>
-<script>
-    function toggleNavbar() {
-        var navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('show');
-    }
-</script>
+                <button type="submit" value="Submit" text=>Submit</button>
+            </form>
+        </div>
+        <div class="column is-one-quarter has-text-centered">
+            <h3>
+                Your SpotOn 5
+            </h3>
+            <p id='song1'></p>
+            <p id='song2'></p>
+            <p id='song3'></p>
+            <p id='song4'></p>
+            <p id='song5'></p>
+        </div>
+    </div>
+    <div id="video">
+        <h2>Check out your top SpotOn pick</h2>
+    </div>
+
+    <script src="./Assets/script.js"></script>
 </body>
 
 </html>
