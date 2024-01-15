@@ -90,4 +90,7 @@ function generateOptions(userInput) {
   }
   return options;
 }
+
+generateOptions("Music")
+
 generateOptions("Music")
