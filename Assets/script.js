@@ -1,4 +1,3 @@
-
 function getVideoData(song1){
   const videoUrl = `https://youtube-music-api3.p.rapidapi.com/search?q=${song1}`;
   const options = {
@@ -91,5 +90,7 @@ function generateOptions(userInput) {
   }
   return options;
 }
+
 generateOptions("Music")
 
+generateOptions("Music")
