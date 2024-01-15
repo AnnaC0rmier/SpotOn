@@ -122,4 +122,3 @@ else if (userInput === 'Music') {
 return options;
 }
 generateOptions("Music")
-
