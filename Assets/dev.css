@@ -14,6 +14,7 @@ header {background: #333;}
     color: black;
     border:1px solid black;
     min-width:15%;
+
     border-radius: 50px;
     text-decoration: solid;
     background: linear-gradient(to right, lightgray, #333);
@@ -40,3 +41,4 @@ a {
   
     
 }
+
