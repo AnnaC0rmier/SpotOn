@@ -18,19 +18,18 @@ header {background: #333;}
     border-radius: 50px;
     text-decoration: solid;
     background: linear-gradient(to right, lightgray, #333);
-    
-    
+
     }
   
-
 img {
- width: 110px;
+ width: 120px;
  border-radius: 20px;
  
 }
    
 p {
     color: white;
+    margin-top: 15px;
     font-size: 16px;
     display: block
     
@@ -39,6 +38,10 @@ p {
 a {
     color: blue;
   
-    
+}
+
+#socials {
+   margin-top: auto;
+  
 }
 
