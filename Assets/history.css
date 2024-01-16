@@ -16,3 +16,9 @@
     .navbar {background: gray;}
     
     .navbar-item {color: white;}
+
+
+    .songCardText{
+        color:black;
+        margin-bottom: 10px;
+    }

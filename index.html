@@ -29,17 +29,17 @@
 <div class="columns is-flex-wrap-wrap is-justify-content-space-evenly mt-5">
 <div class="column is-one-quarter has-text-centered">
     <p>
-    Answer some questions and we will generate SpotOn results
+    Select A Genre to generate SpotOn results:
     </p>
     <form id="Form">
-        <label for="Genre">Genre:</label>
-  <select id="Genre" name="Genre">
-    <option value="Hip-Hop">Hip-Hop</option>
-    <option value="Rock">Rock</option>
-    <option value="EDM">EDM</option>
-    <option value="Metal">Metal</option>
-    <option value="Instrumentals">Instrumentals</option>
-    <option value="Pop">Pop</option>
+        <label for="genre">Genre:</label>
+  <select id="genre" name="genre">
+    <option value="hip-hop">Hip-Hop</option>
+    <option value="rock">Rock</option>
+    <option value="jazz">Jazz</option>
+    <option value="metal">Metal</option>
+    <option value="country">Country</option>
+    <option value="pop">Pop</option>
   </select>
   <button type="submit" value="Submit"  text=>Submit</button>
     </form>
@@ -48,15 +48,15 @@
     <h3>
     Your SpotOn 5
     </h3>
-    <p id = 'song1'></p>
-    <p id = 'song2'></p>
-    <p id = 'song3'></p>
-    <p id = 'song4'></p>
-    <p id = 'song5'></p>
+    <p id = 'song1' class="songs"></p>
+    <p id = 'song2' class="songs"></p>
+    <p id = 'song3' class="songs"></p>
+    <p id = 'song4' class="songs"></p>
+    <p id = 'song5' class="songs"></p>
 </div>
 </div>
 <div id="video">
-    <h2>Check out your top SpotOn pick</h2>
+  
 </div>
 <script src="./Assets/script.js"></script>
 </body>

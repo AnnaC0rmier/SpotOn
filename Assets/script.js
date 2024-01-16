@@ -1,3 +1,6 @@
+const formData = document.getElementById("Form");
+
+
 function getVideoData(song1) {
   const videoUrl = `https://youtube-music-api3.p.rapidapi.com/search?q=${song1}`;
   const options = {
@@ -23,8 +26,8 @@ function getVideoData(song1) {
     })
 }
 
-function getMusicData() {
-  const url = 'https://spotify23.p.rapidapi.com/recommendations/?limit=20&seed_genres=pop';
+function getMusicData(selectedGenre) {
+  const url = `https://spotify23.p.rapidapi.com/recommendations/?limit=20&seed_genres=${selectedGenre}`;
   const options = {
     method: 'GET',
     headers: {
@@ -38,17 +41,37 @@ function getMusicData() {
       return response.json();
     })
     .then(function (data) {
-      var song1 = document.getElementById('song1').textContent = '1. ' + data.tracks[0].name + ' By ' + data.tracks[0].artists[0]?.name;
-      document.getElementById('song2').textContent = '2. ' + data.tracks[1].name + ' By ' + data.tracks[1].artists[0]?.name;
-      document.getElementById('song3').textContent = '3. ' + data.tracks[2].name + ' By ' + data.tracks[2].artists[0]?.name;
-      document.getElementById('song4').textContent = '4. ' + data.tracks[3].name + ' By ' + data.tracks[3].artists[0]?.name;
-      document.getElementById('song5').textContent = '5. ' + data.tracks[4].name + ' By ' + data.tracks[4].artists[0]?.name;
 
-     
+      var song1 = document.getElementById('song1').textContent = '1. ' + data.tracks[0].name + ' By ' + data.tracks[0].artists[0]?.name;
+      var song2= document.getElementById('song2').textContent = '2. ' + data.tracks[1].name + ' By ' + data.tracks[1].artists[0]?.name;
+      var song3 = document.getElementById('song3').textContent = '3. ' + data.tracks[2].name + ' By ' + data.tracks[2].artists[0]?.name;
+      var song4= document.getElementById('song4').textContent = '4. ' + data.tracks[3].name + ' By ' + data.tracks[3].artists[0]?.name;
+      var song5 =document.getElementById('song5').textContent = '5. ' + data.tracks[4].name + ' By ' + data.tracks[4].artists[0]?.name;
+
+
+      const existingData = JSON.parse(localStorage.getItem('savedSongs')) || [];
+
+      const newSongs = [song1, song2, song3, song4, song5];
+      
+      const updatedArray = existingData.concat(newSongs);
+      
+      if (updatedArray.length > 15) {
+          updatedArray.splice(0, 5); 
+      }
+      
+      localStorage.setItem('savedSongs', JSON.stringify(updatedArray));
+      
       getVideoData(song1);
     })
 }
 
 
-getMusicData();
+formData.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const genreDropdown = document.getElementById("genre");
+  const selectedGenre = genreDropdown.value;
+
+  getMusicData(selectedGenre);
+});
 
