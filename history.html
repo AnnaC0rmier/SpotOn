@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your-SpotOn-History</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/e1be9fc3c8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./Assets/history.css">
 
 </head>
-<body>
+
     <header>
         <a class="navbar-item title is-1 has-text-centered" href="index.html"> SpotOn</a>
         <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-           
-               
-            <a class="navbar-item" href="index.html">Home</a>
-            <a class="navbar-item" href="history.html">Search History</a>
-            <a class="navbar-item" href="dev.html">Meet the Team</a>
-            
+        
+              <a href="index.html" class=" navbar-item is-hidden-desktop fa-solid fa-house fa-2xl hover-text">
+                <span class="tooltip-text" id="top">Home</span></a>
+              <a href="history.html" class=" navbar-item is-hidden-desktop fa-solid fa-book-open fa-2xl hover-text">
+                <span class="tooltip-text" id="top">Search History</span></a>
+              <a href="dev.html" class="navbar-item is-hidden-desktop fa-solid fa-people-group fa-2xl hover-text">
+                <span class="tooltip-text" id="top">Meet the Team</span></a>
+                <a class="navbar-item is-hidden-touch fa-solid fa-house fa-2xl" href="index.html"> <span class="url-text">Home</span></a>
+
+                <a class="navbar-item is-hidden-touch fa-solid fa-book-open fa-2xl" href="history.html"> <span class="url-text">Search History</span></a>
+
+                <a class="navbar-item is-hidden-touch fa-solid fa-people-group fa-2xl hover-text" href="dev.html"> <span class="url-text">Meet the Team</span></a>
+              
             </div>
         </nav>
     </header>
         <body>
-            <h2 class="title is-2 has-text-centered">Your SpotOn History</h2>
+            <h1 class="title is-2 has-text-centered">Your SpotOn History</h2>
         <div class="columns is-justify-content-space-evenly mt-5">
             <div class="column is-one-fifth">
                 <h2 class="title is-3">Your SpotOn Five</h2>
