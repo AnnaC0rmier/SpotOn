@@ -19,14 +19,14 @@ body{
         border:1px solid black;
         min-width:15%;
         background: linear-gradient(to right, #a6a6a6, #4c4c4c);
-
+        margin-top: 50px;
         }
 
         .songs{
             margin-bottom: 10px;
       
 
-        margin-top: 50px;
+       
         }
 
      #video {
