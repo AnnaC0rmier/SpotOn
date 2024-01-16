@@ -21,6 +21,7 @@ function getVideoData(song1) {
       video.width = 600;
       video.height = 400;
       video.allowFullscreen = true;
+      videoDiv.removeChild(videoDiv.firstChild)
       videoDiv.appendChild(video);
       videoAppend = true;
     })
