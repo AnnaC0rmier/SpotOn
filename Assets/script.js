@@ -32,7 +32,7 @@ function getMusicData(selectedGenre) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '286c8b5e12mshe701d6545b1d951p1ee483jsnefd7231b1b8b',
+      'X-RapidAPI-Key': '93e4659605mshe6c8aad95b92bf9p1214fbjsn192328b68f6f',
       'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
     }
   };
